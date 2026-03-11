@@ -284,15 +284,3 @@ Contributions are welcome! To get started:
 5. Open a Pull Request
 
 ---
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-<div align="center">
-
-**Built with ❤️ using React, Node.js, MongoDB & AI**
-
-</div>
