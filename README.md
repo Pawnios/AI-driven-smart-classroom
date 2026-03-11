@@ -213,74 +213,58 @@ timetables
 notifications
 ```
 
-You can create and populate these collections through the application UI or manually via MongoDB Atlas.
+You can insert data manually using MongoDB Atlas or through the application UI.
 
----
+⸻
 
-### 5. Run the Application
+🔄 Changing the AI Provider
 
-From the **project root directory:**
+If you want to replace the Gemini API with another AI provider (such as OpenAI or Groq), update the AI logic in:
 
-```bash
-npm run dev
-```
+backend/controllers/timetableGenerator.js
 
-This starts both the frontend and backend concurrently.
+Replace the AI request logic with your preferred API.
 
-| Service | URL |
-|---|---|
-| Frontend | http://localhost:5173 |
-| Backend API | http://localhost:5001 |
+Example providers supported easily:
+	•	OpenAI
+	•	Groq
+	•	HuggingFace
+	•	OpenRouter
 
----
+⸻
 
-## 📋 Example Workflow
+🔒 Security Note
 
-```
-1. Add your Courses        →  Navigate to the Courses page and fill in course details
-2. Add Faculty Members     →  Add instructors with their specializations
-3. Add Rooms               →  Register classrooms and labs with their capacities
-4. Generate Timetable      →  Click "Generate Timetable" on the dashboard
-5. Review Schedule         →  AI produces a conflict-free timetable instantly
-6. Done!                   →  Timetable is saved to the database and ready to use
-```
+The .env file is not included in the repository to protect sensitive credentials.
 
----
+Never commit:
 
-## 🔮 Roadmap
+.env
+API keys
+database passwords
 
-- [ ] Multi-department scheduling support
-- [ ] Faculty preference weighting
-- [ ] Drag-and-drop timetable editor
-- [ ] Export timetable as PDF
-- [ ] Admin authentication system
-- [ ] Student course enrollment integration
-- [ ] Real-time conflict detection and resolution
-- [ ] Mobile application support
-- [ ] Custom ML model trained on historical timetable data
+Ensure .env is listed in .gitignore.
 
----
+⸻
 
-## 🔒 Security Notes
+🚀 Example Workflow
+	1.	Add courses in the Courses page
+	2.	Add faculty and their specialization
+	3.	Add rooms and facilities
+	4.	Click Generate Timetable
+	5.	AI produces a conflict-free schedule
+	6.	Timetable is saved and displayed
 
-- The `.env` file is **not included** in this repository to protect sensitive credentials.
-- **Never commit** API keys, database passwords, or any secrets to version control.
-- Ensure your `.gitignore` includes:
-  ```
-  .env
-  node_modules/
-  ```
+⸻
 
----
+🔮 Future Improvements
+	•	Multi-department scheduling
+	•	Advanced constraint optimization
+	•	Faculty preference weighting
+	•	Drag-and-drop timetable editor
+	•	Export timetable as PDF
+	•	Authentication system for administrators
 
-## 🤝 Contributing
+⸻
 
-Contributions are welcome! To get started:
 
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Open a Pull Request
-
----
