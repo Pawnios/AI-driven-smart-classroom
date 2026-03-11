@@ -63,8 +63,8 @@ Administrators can manage all academic data through an intuitive dashboard, clic
 | **Frontend** | React 18, Vite, Tailwind CSS, Axios, ShadCN UI, Lucide Icons |
 | **Backend** | Node.js, Express.js |
 | **Database** | MongoDB Atlas, Mongoose ODM |
-| **AI Integration** | Google Gemini API *(swappable with OpenAI / Groq / OpenRouter)* |
-| **Dev Tools** | Git, GitHub, npm, Concurrently |
+| **AI Integration** | Groq |
+| **Dev Tools** | Git, GitHub, Concurrently |
 
 ---
 
@@ -214,22 +214,6 @@ notifications
 ```
 
 You can insert data manually using MongoDB Atlas or through the application UI.
-
-⸻
-
-🔄 Changing the AI Provider
-
-If you want to replace the Gemini API with another AI provider (such as OpenAI or Groq), update the AI logic in:
-
-backend/controllers/timetableGenerator.js
-
-Replace the AI request logic with your preferred API.
-
-Example providers supported easily:
-	•	OpenAI
-	•	Groq
-	•	HuggingFace
-	•	OpenRouter
 
 ⸻
 
