@@ -255,9 +255,5 @@ Ensure .env is listed in .gitignore.
 
 
 
-https://github.com/user-attachments/assets/5d126ac1-acf7-411f-b2b3-34130ebf92ca
-
-
-
-
+https://github.com/user-attachments/assets/98624e58-1e6b-4252-a47b-6134bb673773
 
