@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎓 AI-Driven Smart Classroom Timetable Generator
+# 🎓IntelliSched: AI-Driven Smart Classroom Timetable Generator
 
 **An intelligent full-stack web application that automates university timetable creation using AI.**
 
