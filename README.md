@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎓 AI-Driven Smart Classroom Timetable Generator
+# 🎓IntelliSched: AI-Driven Smart Classroom Timetable Generator
 
 **An intelligent full-stack web application that automates university timetable creation using AI.**
 
@@ -63,8 +63,8 @@ Administrators can manage all academic data through an intuitive dashboard, clic
 | **Frontend** | React 18, Vite, Tailwind CSS, Axios, ShadCN UI, Lucide Icons |
 | **Backend** | Node.js, Express.js |
 | **Database** | MongoDB Atlas, Mongoose ODM |
-| **AI Integration** | Google Gemini API *(swappable with OpenAI / Groq / OpenRouter)* |
-| **Dev Tools** | Git, GitHub, npm, Concurrently |
+| **AI Integration** | Groq |
+| **Dev Tools** | Git, GitHub |
 
 ---
 
@@ -217,22 +217,6 @@ You can insert data manually using MongoDB Atlas or through the application UI.
 
 ⸻
 
-🔄 Changing the AI Provider
-
-If you want to replace the Gemini API with another AI provider (such as OpenAI or Groq), update the AI logic in:
-
-backend/controllers/timetableGenerator.js
-
-Replace the AI request logic with your preferred API.
-
-Example providers supported easily:
-	•	OpenAI
-	•	Groq
-	•	HuggingFace
-	•	OpenRouter
-
-⸻
-
 🔒 Security Note
 
 The .env file is not included in the repository to protect sensitive credentials.
@@ -267,4 +251,9 @@ Ensure .env is listed in .gitignore.
 
 ⸻
 
+🚀 Demo 
+
+
+
+https://github.com/user-attachments/assets/98624e58-1e6b-4252-a47b-6134bb673773
 
