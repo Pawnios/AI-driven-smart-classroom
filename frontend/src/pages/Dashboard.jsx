@@ -564,8 +564,10 @@ export default function Dashboard() {
                   </Link>
                 </CardContent>
               </Card>
-
-              {/* Notifications */}
+            </div>
+          </div>
+          {/* Notifications */}
+              
               <Card style={{ background: "#fff", border: "0.5px solid #e5d5cb", borderRadius: "10px" }}>
                 <CardHeader
                   className="flex flex-row items-center justify-between p-4"
@@ -652,11 +654,11 @@ export default function Dashboard() {
                   )}
                 </CardContent>
               </Card>
-            </div>
-          </div>
+
         </div>
       </div>
 
+              
       {/* ── CHAT FAB ── */}
       <div className="fixed bottom-8 right-8 z-40">
         <button
